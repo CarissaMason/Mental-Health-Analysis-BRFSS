@@ -41,6 +41,11 @@ Plots of variable distributions and regression results are available in the `/pl
 
 ## How to Run
 ```r
+# Download the Dataset
+Get the `brfss2021.csv` file from the [CDC BRFSS Data Portal](https://www.cdc.gov/brfss/annual_data/annual_2021.html)  
+Ensure it is named brfss2021.csv
+Save it in the same folder as the R script
+
 # Load necessary packages
 install.packages(c("tidyverse", "lm.beta", "psych"))
 library(tidyverse)
