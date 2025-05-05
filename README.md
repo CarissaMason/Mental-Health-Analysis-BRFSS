@@ -37,7 +37,51 @@ This project analyzes the 2021 Behavioral Risk Factor Surveillance System (BRFSS
   - Female respondents showed higher averages for poor mental health days
 
 ## Visualizations
-Plots of variable distributions and regression results are available in the `/plots/` folder.
+### Mental Health Days Graphs
+<img src="plots/avg%20menhlth%20by%20priminsr.png" width="600" height="400">
+
+
+<img src="plots/avg%20menthlth%20%20by%20educa.png" width="600" height="400">
+
+
+<img src="plots/avg%20menthlth%20by%20sexvar.png" width="600" height="400">
+
+### Variable Distribution
+<img src="/plots/dist%20educa.png" width="600" height="400">
+
+<img src="/plots/dist%20of%20menthlth.png" width="600" height="400">
+
+<img src="/plots/dist%20priminsr.png" width="600" height="400">
+
+<img src="/plots/dist%20sexvar.png" width="600" height="400">
+
+### Discussion
+- The distribution of poor mental health days shows that most respondents reported 0 days.
+- The distribution of education shows a left-skew, which means the data set is skewed toward higher education levels.
+- The sex distribution shows slightly more females in the dataset than males.
+- The distribution of primary health insurance types shows that employer/union plans and Medicare are the most used.
+- The Average Days of Poor Mental Health by Type of Health Insurance shows that respondents with Medicaid have the highest number of poor mental health days in the past month, while those with Medicare have the least.
+- The Average Days of Poor Mental Health by Education chart shows that, on average, respondents with some high school education report a higher number of poor mental health days, while those who are college graduates report the least.
+- Finally, the Average Days of Poor Mental Health by Sex chart shows that females report a higher number of poor mental health days in the past month than males.
+
+### Outliers
+<img src="/plots/educa%20out.png" width="600" height="400">
+
+<img src="/plots/menthlth%20out.png" width="600" height="400">
+
+<img src="/plots/priminsr%20out.png" width="600" height="400">
+
+### Outlier Discussion
+I created box plots to look for outliers since box plots make it easy to visualize outliers. However, I could not find any true outliers. The box plots make it look like codes 77, 88, and 99 are outliers because of the numeric difference between the other codes with a lower numeric value. I removed 77 and 99 from PRIMINSR and MENTHLTH because "Don't know/Not Sure" and "Refused" were not relevant. I renamed 88, the value for "None" in MENTHLTH and PRIMINSR to 0 to better represent the data.
+
+### Basic Descriptive Statistics
+<img src="/plots/basic%20stats.JPG" width="1200" height="300">
+
+### Discussion
+- For SEXVAR, based on the summary() descriptive statistic, SEXVAR has 29,852 more females than males.
+- For MENTHLTH, the summary() shows the minimum is 0 poor mental health days in the past month. The 1st Quartile is 0, meaning 25% of respondents reported no poor mental health days in the past month. The median number of poor mental health days is 0, meaning half of the respondents reported no poor mental health days, and half reported more. The mean for this variable shows respondents have an average of 4.1 poor mental health days in the past month, which means even though most respondents report 0 poor mental health days, there are a significant number of people who report more days.
+- For PRIMINSR, the summary() gives a breakdown of the amount of respondents in each insurance category. This table shows that the majority of respondents are covered by employer/union plans, followed by Medicare. A notable portion of respondents have no insurance.
+- For EDUCA, the summary() shows that most respondents have a college degree, while very few have only none/only kindergarten level of education. This suggests that the dataset is skewed toward higher education levels.
 
 ## How to Run
 ```r
