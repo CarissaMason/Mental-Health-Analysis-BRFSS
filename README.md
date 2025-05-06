@@ -78,7 +78,7 @@ I created box plots to look for outliers since box plots make it easy to visuali
 <img src="/plots/basic%20stats.JPG" width="1200" height="300">
 
 ### Discussion
-- For SEXVAR, based on the summary() descriptive statistic, SEXVAR has 29,852 more females than males.
+- For SEXVAR, based on the summary() descriptive statistic, SEXVAR has slightly more females than males.
 - For MENTHLTH, the summary() shows the minimum is 0 poor mental health days in the past month. The 1st Quartile is 0, meaning 25% of respondents reported no poor mental health days in the past month. The median number of poor mental health days is 0, meaning half of the respondents reported no poor mental health days, and half reported more. The mean for this variable shows respondents have an average of 4.1 poor mental health days in the past month, which means even though most respondents report 0 poor mental health days, there are a significant number of people who report more days.
 - For PRIMINSR, the summary() gives a breakdown of the amount of respondents in each insurance category. This table shows that the majority of respondents are covered by employer/union plans, followed by Medicare. A notable portion of respondents have no insurance.
 - For EDUCA, the summary() shows that most respondents have a college degree, while very few have only none/only kindergarten level of education. This suggests that the dataset is skewed toward higher education levels.
